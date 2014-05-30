@@ -1,0 +1,174 @@
+body {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: 'PT Sans', sans-serif;
+}
+
+/*HEADER STYLING*/
+nav {
+  background-color: #3f81c6;
+  padding: 15px 25px;
+  margin: 0px;
+}
+
+nav a {
+  margin: 8px 10px 0 10px;
+  color: #a1c2e3;
+  padding: 6px 15px;
+}
+
+.brand span {
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'PT Sans', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  top: 1px;
+  left: 8px;
+}
+
+.brand:hover {
+  text-decoration: none;
+  cursor: pointer;
+  opacity: .9;
+}
+
+nav a:hover {
+  color: white;
+  text-decoration: none;
+}
+
+nav a.active {
+  background-color: #3068a2;
+  color: white;
+  border-radius: 3px;
+}
+
+
+/*SECTION STYLING*/
+.info-block {
+  overflow: auto;
+  text-align: center;
+  position: relative;
+  height: 685px;
+}
+
+.info-block h1 {
+  font-size: 4em;
+  letter-spacing: 2px;
+}
+
+.info-block p {
+  font-size: 1.5em;
+  max-width: 850px;
+  margin: 20px auto 30px auto;
+}
+
+#intro {
+  background-color: #669bd2;
+  color: white;
+  padding: 70px 0px 85px 0px;
+  height: 100%;
+}
+
+#intro p {
+  color: #ddf1f4;
+}
+
+#intro img {
+  margin: 20px auto 30px auto;
+}
+
+#favorite-things {
+  padding: 70px 0px 85px 0px;
+  height: 100%;
+}
+
+#code {
+  background-color: #D8BE72;
+  color: white;
+  padding: 70px 0px 85px 0px;
+  height: 100%;
+}
+
+#code p {
+  color: #ddf1f4;
+}
+
+#contact {
+  padding: 0px 0px 85px 0px;
+  height: 100%;
+}
+
+#contact h1 {
+  padding: 70px 0px 85px 0px;
+  height: 100%;
+}
+
+#contact h3 {
+  color: black;
+}
+
+#contact img {
+  width: 153px;
+  margin: 0 auto;
+  display: block;
+}
+
+/*SCROLLER STYLING*/
+.scroller-arrow {
+  width: 60px;
+  height: 60px;
+  background-image: url(../img/arrow-big.png);
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.scroller-arrow-holder {
+  width: 100%;
+  background: transparent;
+  bottom: 0;
+  position: absolute;
+}
+
+.scroller-arrow-half {
+  width: 72px;
+  height: 33px;
+  background-image: url(../img/arrow-half.png);
+}
+
+/*PICTURE DIVIDERS*/
+.picture-divider {
+  overflow: auto;
+  text-align: center;
+  position: relative;
+  height: 600px;
+}
+
+#new-zealand-lake {
+  background: url(../img/nz-lake-reflection2.jpg) no-repeat center center;
+  height: 100%;
+}
+
+#skydiving {
+  background: url(../img/skydiving.jpg) no-repeat center center;
+  height: 100%;
+}
+
+#camel {
+  background: url(../img/camel.jpg) no-repeat center center;
+  height: 100%;
+}
+
+/*FOOTER*/
+footer {
+  background-color: #eee;
+  padding: 30px;
+  color: #555;
+}
