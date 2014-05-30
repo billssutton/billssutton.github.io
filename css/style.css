@@ -118,6 +118,10 @@ nav a.active {
   display: block;
 }
 
+#contact a:hover{
+  color:black;
+}
+
 /*SCROLLER STYLING*/
 .scroller-arrow {
   width: 60px;
