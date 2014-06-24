@@ -15,6 +15,7 @@
     <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.ico" />
 
     <!--Google Analytics Snippet-->
     <script>
@@ -31,17 +32,25 @@
 
 <body>
 
-<nav class="clearfix">
+<nav class="clearfix" id="nav-bar">
 
     <a class="brand">
-        <span>Bill</span>
+        <span>Bill S. Sutton</span>
     </a>
-            <span class="pull-right">
-                <a href="#" class="active">Home</a>
-                <a href="#">Work</a>
-                <a href="#">About</a>
-                <a href="#">Resume</a>
-            </span>
+    <span class="pull-right">
+        <ul class="main-menu">
+            <li><a href="#" class="active main-menu-item">Home</a></li>
+            <li>
+                <a href="#" class="main-menu-item drop-down-item" style="cursor:default">Work<b class="caret"></b></a>
+                <ul class="sub-menu">
+                    <li><a href="column-chart.html" class="sub-menu-item">Column Chart</a></li>
+                    <li><a href="" class="sub-menu-item">Second Item</a></li>
+                </ul>
+            </li>
+            <li><a href="#" class="main-menu-item">About</a></li>
+            <li><a href="#" class="main-menu-item">Resume</a></li>
+        </ul>
+    </span>
 </nav>
 <div class="info-block">
     <div id="intro">
@@ -63,10 +72,19 @@
 </div>
 <div class="info-block">
     <div id="favorite-things">
-        <section class="container">
-            <h1>These are a few of my favorite things.</h1>
-            <p>Bears, Bulls, Cubs, coding</p>
-        </section>
+        <div class="container-fluid">
+            <div class="row-fluid">
+                <div class="span2">
+                    <div>
+                        <img class="header-icon" src="img/Chicago-flag.png">
+                    </div>
+                </div>
+                <div class="span10">
+                    <h1>These are a few of my favorite things.</h1>
+                    <p>Bears, Bulls, Cubs, coding</p>
+                </div>
+            </div>
+        </div>
         <div class="scroller-arrow-holder">
             <a href="#code" class="scroller-arrow scroller-arrow-half" aria-label="Go to next section"></a>
         </div>
@@ -130,7 +148,7 @@
     </div>
 </footer>
 
-<script src="js/jquery-1.11.0.min.js"></script>
+<script src="lib/jquery-1.11.0.min.js"></script>
 <script src="js/indexcontroller.js"></script>
 </body>
 

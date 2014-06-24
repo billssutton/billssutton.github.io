@@ -6,8 +6,12 @@ $('.scroller-arrow[href*=#]:not([href=#])').click(function() {
         var target = $(this.hash);
         target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
         if (target.length) {
+            var css = target.css;
+            var scrollToPosition = target.offset().top - ($(window).height() - target.outerHeight())/2;
+            console.log($(window).height());
+            console.log(target.outerHeight());
             $('html,body').animate({
-                scrollTop: target.offset().top - 75
+                scrollTop: scrollToPosition
             }, 1200);
             return false;
         }

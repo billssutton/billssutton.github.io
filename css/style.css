@@ -8,15 +8,104 @@ h1, h2, h3 {
 
 /*HEADER STYLING*/
 nav {
-  background-color: #3f81c6;
+  background-color: transparent;
   padding: 15px 25px;
-  margin: 0px;
+  margin: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
 }
 
-nav a {
-  margin: 8px 10px 0 10px;
-  color: #a1c2e3;
-  padding: 6px 15px;
+nav .main-menu-item {
+  color: #e9edf1;
+  background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 3px;
+  margin: 0;
+  padding: 6px 10px;
+  float: right;
+  display: block;
+}
+
+nav .sub-menu {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-right-radius: 3px;
+
+}
+
+nav .main-menu-item:hover {
+  color: white;
+  text-decoration: none;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+nav .drop-down-item:hover {
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 6px 10px 10px 10px;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+nav ul .sub-menu li {
+  padding: 6px 10px 6px 10px;
+  background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */;
+  background: rgba(0, 0, 0, 0.3);
+  margin: 0;
+}
+
+nav ul .sub-menu li:hover {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+nav .sub-menu-item {
+  color: #e9edf1;
+}
+
+nav .sub-menu-item:hover {
+  color: white;
+  text-decoration: none;
+}
+
+nav .main-menu-item.active {
+  background: rgb(0, 0, 0); /* Fallback for older browsers without RGBA-support */;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  border-radius: 3px;
+}
+
+nav li:hover .drop-down-item { /*when over the list of a main menu item, keep that menu item highlighted*/
+  color: white;
+  float:none;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 6px 10px 10px 10px;
+}
+
+nav li {
+  margin: 0 10px 0 10px;
+  list-style:none;
+  display:inline;
+  float:left;
+}
+
+nav li .sub-menu {
+  display: none;
+}
+
+nav li:hover .sub-menu { /*when over the list of a main menu item, show that items sub-menu*/
+  z-index: 5000;
+  display: inline-block;
+  position:absolute;
+  margin:0 auto;
+  padding:0;
+}
+
+nav li:hover li {
+  display: block;
+  float:none;
 }
 
 .brand span {
@@ -34,17 +123,6 @@ nav a {
   text-decoration: none;
   cursor: pointer;
   opacity: .9;
-}
-
-nav a:hover {
-  color: white;
-  text-decoration: none;
-}
-
-nav a.active {
-  background-color: #3068a2;
-  color: white;
-  border-radius: 3px;
 }
 
 
@@ -70,7 +148,7 @@ nav a.active {
 #intro {
   background-color: #669bd2;
   color: white;
-  padding: 70px 0px 85px 0px;
+  padding: 70px 0 85px 0;
   height: 100%;
 }
 
@@ -83,14 +161,22 @@ nav a.active {
 }
 
 #favorite-things {
-  padding: 70px 0px 85px 0px;
+  background-color: #7c8c6d;
+  color: white;
+  padding: 70px 0 85px 0;
   height: 100%;
+}
+
+#favorite-things .header-icon {
+  width: 153px;
+  margin: 0 auto;
+  display: block;
 }
 
 #code {
   background-color: #D8BE72;
   color: white;
-  padding: 70px 0px 85px 0px;
+  padding: 70px 0 85px 0;
   height: 100%;
 }
 
@@ -99,12 +185,12 @@ nav a.active {
 }
 
 #contact {
-  padding: 0px 0px 85px 0px;
+  padding: 0 0 85px 0;
   height: 100%;
 }
 
 #contact h1 {
-  padding: 70px 0px 85px 0px;
+  padding: 70px 0 85px 0;
   height: 100%;
 }
 
@@ -131,7 +217,6 @@ nav a.active {
   display: block;
   margin: 0 auto;
   position: relative;
-  -webkit-tap-highlight-color: transparent;
 }
 
 .scroller-arrow-holder {
@@ -144,7 +229,7 @@ nav a.active {
 .scroller-arrow-half {
   width: 72px;
   height: 33px;
-  background-image: url(../img/arrow-half.png);
+  background-image: url(../img/arrow-half-white-opaque-arrow.png);
 }
 
 /*PICTURE DIVIDERS*/
@@ -175,4 +260,24 @@ footer {
   background-color: #eee;
   padding: 30px;
   color: #555;
+}
+
+/*COLUMN CHART EXAMPLE PAGE*/
+.col-chart-ex-page {
+  margin-top: 62px;
+}
+.col-chart-ex-page .pane {
+  margin: 1em auto 4em auto;
+  width: 960px;
+}
+
+
+.col-chart-ex-page iframe {
+  width: 960px;
+  height: 500px;
+  border: 1px solid #DEDEDE;
+}
+
+.chart-description {
+  margin: 20px 10px;
 }
