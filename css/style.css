@@ -322,6 +322,15 @@ footer {
   text-align: center;
 }
 
+/*ABOUT PAGE*/
+.about-page {
+  margin-top: 62px;
+}
+.about-page .pane {
+  margin: 1em auto 4em auto;
+  width: 960px;
+}
+
 /* Common style */
 .grid figure {
   position: relative;
