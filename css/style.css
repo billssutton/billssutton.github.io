@@ -273,17 +273,17 @@ nav li:hover li {
 }
 
 #new-zealand-lake {
-  background: url(../img/nz-lake-reflection2.jpg) no-repeat center center;
+  background: url(../img/nz-lake-reflection.png) repeat-x center center;
   height: 100%;
 }
 
 #skydiving {
-  background: url(../img/skydiving.JPG) no-repeat center center;
+  background: url(../img/skydiving.JPG) repeat-x center center;
   height: 100%;
 }
 
 #camel {
-  background: url(../img/camel.jpg) no-repeat center center;
+  background: url(../img/camel2.jpg) repeat-x center center;
   height: 100%;
 }
 
