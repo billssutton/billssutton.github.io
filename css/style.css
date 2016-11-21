@@ -131,7 +131,6 @@ nav li:hover li {
   overflow: auto;
   text-align: center;
   position: relative;
-  height: 685px;
 }
 
 .info-block h1 {
@@ -141,14 +140,36 @@ nav li:hover li {
 
 .info-block p {
   font-size: 1.5em;
-  margin: 20px auto 30px auto;
+}
+
+.left-info-div{
+  display: inline-block;
+  padding: 20px 20px;
+  text-align: right;
+  width: 40%;
+  vertical-align: middle;
+}
+
+.right-info-div{
+  display: inline-block;
+  padding: 20px 20px;
+  width: 50%;
+  text-align: left;
+  vertical-align: middle;
+}
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    [class*="-info-div"] {
+        width: 100%;
+    }
 }
 
 #intro {
   background-color: #669bd2;
   color: white;
   padding: 40px 0 85px 0;
-  height: 100%;
+  min-height: 685px;
 }
 
 #intro p {
@@ -163,85 +184,41 @@ nav li:hover li {
   background-color: #7c8c6d;
   color: white;
   padding: 70px 0 85px 0;
-  height: 100%;
-}
-
-#favorite-things .left-info-div{
-  display: table;
-  margin: 20px 20px;
-  text-align: right;
-  width:50%;
-  height:100%;
-  float:left;
+  min-height: 685px;
 }
 
 #favorite-things .left-info-div span{
   display: table-cell;
-  vertical-align: middle;
 }
 
 #favorite-things .left-info-div p{
   max-width: 700px;
-  margin-right: 0px;
-}
-
-#favorite-things .right-info-div{
-  display: table;
-  margin: 20px 20px;
-  text-align: left;
-  width:40%;
-  height:100%;
-  float:left;
 }
 
 #favorite-things .right-info-div span{
   display: table-cell;
-  vertical-align: middle;
 }
 
 #code {
   background-color: #D8BE72;
   color: white;
   padding: 70px 0 85px 0;
-  height: 100%;
-}
-
-#code .left-info-div{
-  display: table;
-  margin: 20px 20px;
-  text-align: center;
-  width:40%;
-  height:100%;
-  float:left;
+  min-height: 685px;
 }
 
 #code .left-info-div span{
-  display: table-cell;
-  vertical-align: middle;
-}
-
-#code .right-info-div{
-  display: table;
-  margin: 20px 40px;
-  text-align: left;
-  width:50%;
-  height:100%;
-  float:left;
 }
 
 #code .right-info-div span{
-  display: table-cell;
-  vertical-align: middle;
 }
 
 #code .right-info-div p{
   max-width: 700px;
-  margin-left: 0px;
 }
 
 #contact {
   padding: 0 0 85px 0;
-  height: 100%;
+  min-height: 685px;
 }
 
 #contact h1 {
@@ -350,11 +327,10 @@ footer {
   position: relative;
   display: inline-block;
   overflow: hidden;
-  margin: 15px;
-  width: 35%;
+  margin: 10px;
+  width: 30%;
   height: auto;
   text-align: center;
-  border: 2px solid #897048;
 }
 
 .grid figure img {
@@ -503,7 +479,6 @@ figure.effect-marley:hover p {
 
 /* entire container, keeps perspective */
 .flip-container {
-  perspective: 1000;
   margin: 0px auto;
   width:  200px
 }
@@ -533,6 +508,8 @@ figure.effect-marley:hover p {
 /* front pane, placed above back */
 .front {
   z-index: 2;
+  margin-top:125px;
+  margin-bottom:125px;
 }
 
 /* back, initially hidden pane */
