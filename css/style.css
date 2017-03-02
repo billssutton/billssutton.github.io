@@ -525,3 +525,21 @@ figure.effect-marley:hover p {
 .back {
   transform: rotateY(180deg);
 }
+
+
+/* UBER goodness */
+
+.button {
+    background-image: url('../img/Uber API Design Guidelines/Assets/Uber API Buttons/Grey/PNGs/2x/UBER_API_Button_2x_Grey_hard edge.png');
+    background-size: cover;
+    width: 280px;
+    height: 44px;
+    margin: 0 auto;
+}
+
+#time {
+    text-align: right;
+    margin-top: 2%;
+    padding-top: 12px;
+    padding-right: 14px;
+}
