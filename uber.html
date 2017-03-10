@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!--<meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+        <meta charset="utf-8">
+        <title>Bill S. Sutton - About</title>
+
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <!-- Le style -->
+        <link href="css/bootstrap.css" rel="stylesheet">
+        <link href='http://fonts.googleapis.com/css?family=PT+Sans:700' rel='stylesheet' type='text/css'>
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link rel="shortcut icon" href="img/favicon.ico" />
+
+        <!--Google Analytics Snippet-->
+   <!--    <script>
+            (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+                (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+                    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+            })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+            ga('create', 'UA-51495420-1', 'billssutton.com');
+            ga('send', 'pageview');
+
+        </script>-->
+
+        <div>
+            
+    </head>
+
+    <body>
+        <script src="js/jquery-3.1.1.min.js"></script>
+        <script src="js/uber.js"></script>
+
+        <nav class="clearfix" id="nav-bar">
+            <a class="brand" href="./index.html">
+                <span style="color:black">Bill S. Sutton</span>
+            </a>
+            <div class="pull-right">
+                <ul class="main-menu">
+                    <li><a href="index.html" class="main-menu-item">Home</a></li>
+                    <li>
+                        <a href="#" class="main-menu-item drop-down-item" style="cursor:default">Work<b class="caret"></b></a>
+                        <ul class="sub-menu">
+                            <li><a href="column-chart.html" class="sub-menu-item">Column Chart</a></li>
+                            <!--<li><a href="" class="sub-menu-item">Second Item</a></li>-->
+                        </ul>
+                    </li>
+                    <li><a href="#" class="active main-menu-item">About</a></li>
+                    <!--<li><a href="#" class="main-menu-item">Resume</a></li>-->
+                </ul>
+            </div>
+        </nav>
+
+        <div class="about-page">
+            <div class="pane">
+                <h1>
+                    Uber Test
+                </h1>
+                <form id="timeform" action="javascript:getEstimatesForLocation()">
+                    <p>Start Latitude: <input type="text" name="startlat" placeholder="Start Latitude" value="42.050673"></p><br>
+                    <p>Start Longitude: <input type="text" name="startlon" placeholder="Start Longitude" value="-87.683317"></p><br>
+                    <p>End Latitude: <input type="text" name="endlat" placeholder="End Latitude" value="42"></p><br>
+                    <p>End Longitude: <input type="text" name="endlon" placeholder="End Longitude" value="-87"></p><br>
+                    <p><input class="button" type="submit"></p>
+                </form> 
+                <!-- <div class="button" onclick="getEstimatesForLocation(fname, lname)">
+                    <p id="time">ESTIMATING TIME</p>
+                </div> -->
+                <div class="result"></div>
+            </div>
+        </div>
+    </body>
+</html>
+
